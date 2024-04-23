@@ -52,9 +52,8 @@ public class BurgerTest extends TestData {
     @Test
     public void getPriceTest() {
 
-        float price = 0;
         Mockito.when(bun.getPrice()).thenReturn(TestData.BUN_PRICE);
-        price = bun.getPrice() * 2;
+        float price = bun.getPrice() * 2;
         burger.setBuns(bun);
 
         burger.addIngredient(ingredient);
